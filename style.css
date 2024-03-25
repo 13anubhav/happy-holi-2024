@@ -1,0 +1,454 @@
+    
+#musicButton {
+    display: block;
+    margin: 20px auto; /* Center the button */
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #213051;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#musicButton:hover {
+    background-color: #3355FF;
+}
+
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 3vmin;
+  }
+  
+  body {
+    background: rgb(154, 180, 195);
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    min-width: 10%;
+    min-height: 100vh;
+    /* background: radial-gradient(circle, rgb(255, 136, 81), black); */
+    background: radial-gradient(circle,rgb(222, 82, 82), black);
+    position: relative;
+    border: 0.3rem solid gray;
+  }
+  
+  .class1 {
+    width: 80%;
+    min-width: 10%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .greeting {
+    color: yellow;
+    font-family: 'Satisfy', cursive;
+    backface-visibility: hidden;
+    animation: paragraphAnimate 5s linear infinite;
+    animation-fill-mode: backwards;
+  }
+
+  .class1>p {
+    overflow: hidden;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    font-family: 'Satisfy', cursive;
+    padding: 0.6rem;
+    animation: paragraphAnimate 5s linear infinite;
+    -webkit-animation-timing-function: linear;
+    backface-visibility: hidden;
+    animation-fill-mode: backwards;
+  }
+
+  @keyframes paragraphAnimate {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .class2 {
+    width: 100%;
+    position: absolute;
+    top: 65.2%;
+    left: 50%;
+    padding: 0.2rem;
+    transform: translate(-50%, -50%);
+  }
+  
+  .class2-1 {
+    width: 100%;
+    height: 67.8vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+  }
+
+  .class2a {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    border-radius: 50%;
+    background-color: orange;
+    text-align: center;
+    backface-visibility: hidden;
+    animation: moveClass2a 5s linear infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2a {
+    0% {
+      opacity: 0;
+      transform: translate(0, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(6em, 8em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(18em, -8em); 
+      box-shadow: 2px 2px 3px rgb(64, 255, 0);
+     }
+  }
+  
+  .class2b {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 49%;
+    left: 44%;
+    border-radius: 50%;
+    background-color: rgb(132, 89, 54);
+    backface-visibility: hidden;
+    animation: moveClass2b 3s linear 2s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2b {
+    0% {
+      opacity: 0;
+      transform: translate(-1em, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(8em, 8em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(16em, -5em); 
+      box-shadow: 2px 2px 3px orange;
+     }
+  }
+  
+  .class2c {
+    width: 1.7rem;
+    height: 1.7rem;
+    position: absolute;
+    top: 89%;
+    left: 23%;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(122, 49, 64);
+    backface-visibility: hidden;
+    animation: moveClass2c 3s linear 1s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2c {
+    0% {
+      opacity: 0;
+      transform: translate(-1em, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(5em, 0.5em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(18em, -8em); 
+      box-shadow: 2px 2px 3px rgb(255, 0, 212);
+     }
+  }
+  
+  .class2d {
+    width: 2.7rem;
+    height: 2.7rem;
+    position: absolute;
+    top: 34%;
+    left: 73%;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    background-color: rgb(12, 29, 64);
+    backface-visibility: hidden;
+    animation: moveClass2d 4s linear 1.3s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2d {
+    0% {
+      opacity: 0;
+      transform: translate(-1em, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(2em, 5em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(6em, -5em); 
+      box-shadow: 2px 2px 3px rgb(255, 47, 0);
+     }
+  }
+
+  .class2e {
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    top: 76%;
+    left: 28%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    backface-visibility: hidden;
+    animation: moveClass2e 2s linear 3.5s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2e {
+    0% {
+      opacity: 0;
+      transform: translate(-1em, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(8em, -2em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(18em, -8em); 
+      box-shadow: 2px 2px 3px rgb(255, 0, 255);
+     }
+  }
+  
+  .class2f {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 5%;
+    left: 46%;
+    border-radius: 50%;
+    background-color: rgb(25, 255, 255);
+    backface-visibility: hidden;
+    animation: moveClass2f 5s linear 0.2s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2f {
+    0% {
+      opacity: 0;
+      transform: translate(-1em, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(8em, 4.2em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(13em, -8em); 
+      box-shadow: 2px 2px 3px rgb(0, 255, 115);
+     }
+  }
+  
+  .class2g {
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    top: 66%;
+    left: 57%;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    backface-visibility: hidden;
+    animation: moveClass2g 3.6s linear 0.3s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2g {
+    0% {
+      opacity: 0;
+      transform: translate(-1em, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(8em, 1.5em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(11em, -8em); 
+      box-shadow: 2px 2px 3px rgb(0, 162, 255);
+     }
+  }
+  
+  .class2h {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 33.7%;
+    left: 3.2%;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+    backface-visibility: hidden;
+    animation: moveClass2h 2.5s linear 2.3s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2h {
+    0% {
+      opacity: 0;
+      transform: translate(-1em, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(7em, 7em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(18em, -8em); 
+      box-shadow: 2px 2px 3px rgb(4, 0, 255);
+     }
+  }
+  
+  .class2i {
+    width: 3.4rem;
+    height: 3.4rem;
+    position: absolute;
+    top: 69.7%;
+    left: 46.2%;
+    border-radius: 50%;
+    background-color: rgb(100, 10, 255);
+    backface-visibility: hidden;
+    animation: moveClass2i 2.2s linear 3.6s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2i {
+    0% {
+      opacity: 0;
+      transform: translate(-1em, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(6em, 3em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(14em, -8em); 
+      box-shadow: 2px 2px 3px rgb(9, 255, 0);
+     }
+  }
+  
+  .class2j {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 15.7%;
+    left: 47.2%;
+    border-radius: 50%;
+    background-color: rgb(100, 10, 25);
+    backface-visibility: hidden;
+    animation: moveClass2j 4.2s linear 1.7s infinite;
+    -webkit-animation-timing-function: linear;
+    animation-fill-mode: backwards;
+  }
+  
+  @keyframes moveClass2j {
+    0% {
+      opacity: 0;
+      transform: translate(-1em, -10em);
+    }
+    
+    50% {
+      opacity: 1;
+      transform: translate(8em, 1em);
+      
+    }
+    
+    100% {
+      opacity: 0.2;
+      transform: translate(12em, -8em); 
+      box-shadow: 2px 2px 3px rgb(187, 255, 0);
+     }
+  }
+   
+        #musicButton {
+            display: block;
+            margin: 20px auto; /* Center the button */
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #213051;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #musicButton:hover {
+            background-color: #3355FF;
+        }
