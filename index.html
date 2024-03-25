@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Holi</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Celebrate Holi with joy and happiness. Wishing you a colorful Holi filled with love and prosperity.">
+    <meta name="keywords" content="Holi, festival, celebration, colors, happiness, Anubhav holi 2024">
+    <meta name="author" content="Anubhav Chaudhary">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="class1">
+            <h1 class="greeting">Happy Holi 2024 To You !! </h1>
+            <p>May this Holi bring more prosperity and happiness to you and your family!</p>
+            <a href="https://www.linkedin.com/in/anubhav-chaudhary-4bba7918b/" target="_blank" class="linkedin-link">
+                
+                <h3 style="text-align: center;">@ Anubhav</h3>
+            </a>
+        </div>
+        <div class="class2">
+            <div class=class2-1>
+                <div class="class2a"></div>
+                <div class="class2b"></div>
+                <div class="class2c"></div>
+                <div class="class2d"></div>
+                <div class="class2e"></div>
+                <div class="class2f"></div>
+                <div class="class2g"></div>
+                <div class="class2h"></div>
+                <div class="class2i"></div>
+                <div class="class2j"></div>
+                <button id="musicButton">Play Music</button> 
+            </div>
+        </div>
+        <audio id="holiAudio" src="holi.mp3"></audio> 
+    </div>
+
+    <!-- Script for music button -->
+    <script>
+        const audio = document.getElementById('holiAudio');
+        const musicButton = document.getElementById('musicButton');
+
+        let isPlaying = false;
+
+        function toggleMusic() {
+            if (isPlaying) {
+                audio.pause();
+                musicButton.textContent = 'Play Music';
+            } else {
+                audio.play();
+                musicButton.textContent = 'Pause Music';
+            }
+            isPlaying = !isPlaying;
+        }
+
+        musicButton.addEventListener('click', toggleMusic);
+    </script>
+</body>
+</html>
